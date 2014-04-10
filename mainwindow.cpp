@@ -60,21 +60,25 @@ void MainWindow::open()
 void MainWindow::on_actionEdges_triggered()
 {
     meshView->isDrawEdges = !meshView->isDrawEdges;
+    meshView->updateGL();
 }
 
 void MainWindow::on_actionNormals_triggered()
 {
     meshView->isDrawNormals = !meshView->isDrawNormals;
+    meshView->updateGL();
 }
 
 void MainWindow::on_actionPrincipal_1_triggered()
 {
     meshView->isDrawCurv1 = !meshView->isDrawCurv1;
+    meshView->updateGL();
 }
 
 void MainWindow::on_actionPrincipal_2_triggered()
 {
     meshView->isDrawCurv2 = !meshView->isDrawCurv2;
+    meshView->updateGL();
 }
 
 void MainWindow::on_actionNormalColor_triggered()
@@ -82,6 +86,7 @@ void MainWindow::on_actionNormalColor_triggered()
     ui->actionCurv_Color->setChecked(false);
     meshView->isDrawCurvColors = false;
     meshView->isDrawNormalColors = !meshView->isDrawNormalColors;
+    meshView->updateGL();
 }
 
 void MainWindow::on_actionCurv_Color_triggered()
@@ -89,46 +94,55 @@ void MainWindow::on_actionCurv_Color_triggered()
     ui->actionNormalColor->setChecked(false);
     meshView->isDrawNormalColors = false;
     meshView->isDrawCurvColors = !meshView->isDrawCurvColors;
+    meshView->updateGL();
 }
 
 void MainWindow::on_actionBoundaries_triggered()
 {
     meshView->isDrawBoundaries = !meshView->isDrawBoundaries;
+    meshView->updateGL();
 }
 
 void MainWindow::on_actionPreview_triggered()
 {
     meshView->isDrawPreview = !meshView->isDrawPreview;
+    meshView->updateGL();
 }
 
 void MainWindow::on_actionExterior_Silhouette_triggered()
 {
     meshView->isDrawSilhouette = !meshView->isDrawSilhouette;
+    meshView->updateGL();
 }
 
 void MainWindow::on_actionOccluding_Contours_triggered()
 {
     meshView->isDrawOccludingContours = !meshView->isDrawOccludingContours;
+    meshView->updateGL();
 }
 
 void MainWindow::on_actionSuggestive_Contours_triggered()
 {
     meshView->isDrawSuggestiveContours = !meshView->isDrawSuggestiveContours;
+    meshView->updateGL();
 }
 
 void MainWindow::on_actionRidges_triggered()
 {
     meshView->isDrawRidges = !meshView->isDrawRidges;
+    meshView->updateGL();
 }
 
 void MainWindow::on_actionValleys_triggered()
 {
     meshView->isDrawValleys = !meshView->isDrawValleys;
+    meshView->updateGL();
 }
 
 void MainWindow::on_actionApparent_Ridges_triggered()
 {
     meshView->isDrawApparentRidges = !meshView->isDrawApparentRidges;
+    meshView->updateGL();
 }
 
 void MainWindow::on_actionSave_Ridges_file_triggered()
@@ -167,21 +181,25 @@ void MainWindow::on_actionSave_Occluding_file_triggered()
 void MainWindow::on_actionLines_triggered()
 {
     meshView->isDrawRVLines = !meshView->isDrawRVLines;
+    meshView->updateGL();
 }
 
 void MainWindow::on_actionFaces_triggered()
 {
     meshView->isDrawRVFaces = !meshView->isDrawRVFaces;
+    meshView->updateGL();
 }
 
 void MainWindow::on_actionLines_2_triggered()
 {
     meshView->isDrawOCLines = !meshView->isDrawOCLines;
+    meshView->updateGL();
 }
 
 void MainWindow::on_actionFaces_2_triggered()
 {
     meshView->isDrawOCFaces = !meshView->isDrawOCFaces;
+    meshView->updateGL();
 }
 
 void MainWindow::on_actionSave_RV_mesh_file_triggered()

@@ -176,6 +176,22 @@ bool TriMeshView::readMesh(const char *filename, const char *xffilename)
     return true;
 }
 
+
+bool TriMeshView::readXf(const char *filename)
+{
+    if(!xf.read(filename)) {
+        xf = xform::trans(0, 0, -3.5f / 0.7 * triMesh->bsphere.r) *
+                             xform::trans(-triMesh->bsphere.center);
+    } else {
+
+        xf = xform::trans(0, 0, -3.5f / 0.7 * triMesh->bsphere.r) *
+                xform::trans(-triMesh->bsphere.center) * xf;
+    }
+    camera.stopspin();
+    updateGL();
+    return true;
+}
+
 //------------------------protected function------------------------
 
 void TriMeshView::resizeGL(int width, int height)

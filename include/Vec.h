@@ -320,6 +320,7 @@ typedef Vec<4,float> vec4;
 typedef Vec<2,int> ivec2;
 typedef Vec<3,int> ivec3;
 typedef Vec<4,int> ivec4;
+typedef Vec<3, unsigned short int> uvec3;
 
 
 // Nonmember operators that take two Vecs

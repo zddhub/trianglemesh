@@ -276,12 +276,14 @@ void MainWindow::on_actionThresh_triggered()
 void MainWindow::on_actionSmooth_curv_triggered()
 {
     meshView->smooth_curv();
+    meshView->updateGL();
     this->statusBar()->showMessage( tr("Smooth Curv ... Done."));
 }
 
 void MainWindow::on_actionSmooth_DCurv_triggered()
 {
     meshView->smooth_dcurv();
+    meshView->updateGL();
     this->statusBar()->showMessage( tr("Smooth DCurv ... Done."));
 }
 
@@ -312,11 +314,13 @@ void MainWindow::on_actionSave_Curv2_triggered()
 void MainWindow::on_actionLaplace_Smooth_triggered()
 {
     meshView->laplace_smooth_curv();
+    meshView->updateGL();
     this->statusBar()->showMessage( tr("Smooth Laplace Curv ... Done."));
 }
 
 void MainWindow::on_actionRidge_Valley_triggered()
 {
     meshView->time_ridge_valley();
+    meshView->updateGL();
     this->statusBar()->showMessage( tr("test ridge-valley time ... Done."));
 }

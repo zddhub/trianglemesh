@@ -66,6 +66,8 @@ public:
     std::vector<point> vertices;
     std::vector<Face> faces;
 
+    std::vector<uvec3> colors;
+
     void need_faces()
     {
         if(!faces.empty())

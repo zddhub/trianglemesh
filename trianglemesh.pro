@@ -19,8 +19,12 @@
 QT       += core gui \
             opengl
 
-TARGET = trimeshview
+CONFIG += console
+TARGET = gen_view_image
 TEMPLATE = app
+DESTDIR = ./bin
+
+macx : CONFIG -= app_bundle
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 

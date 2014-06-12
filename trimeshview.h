@@ -42,7 +42,7 @@ public:
     explicit TriMeshView(QWidget *parent = 0);
     ~TriMeshView();
     bool readMesh(const char *filename, const char* xffilename = "");
-
+    bool readXf(const char *filename);
     void closeAllDrawings();
 signals:
 

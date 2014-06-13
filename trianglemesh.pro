@@ -19,12 +19,9 @@
 QT       += core gui \
             opengl
 
-CONFIG += console
-TARGET = gen_view_image
+TARGET = LineExtractDemo
 TEMPLATE = app
 DESTDIR = ./bin
-
-macx : CONFIG -= app_bundle
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 

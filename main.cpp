@@ -43,43 +43,12 @@
 #include "mainwindow.h"
 #include "trianglemesh.h"
 
-//在windows下,本程序使用以下.bat程序调用
-/*
- *  gen_view_image.exe cow.obj views 102 images
- */
-
-void usage() {
-    cout << "Usage: gen_view_image.exe modelfile xfdir viewnum imagedir"<<endl;
-}
-
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    if(argc < 4) {
-        usage();
-        exit(1);
-    }
-//    MainWindow mw;
-//    mw.show();
-    TriMeshView tv;
-    tv.isDrawBoundaries = true;
-    tv.isDrawOccludingContours = true;
-    tv.isDrawSuggestiveContours = true;
 
-    tv.readMesh(argv[1]);
-//    tv.show();
+    MainWindow mw;
+    mw.showMaximized();
 
-    uint viewnum = atoi(argv[3]);
-
-    for(uint i = 0; i < viewnum; i++) {
-        char buf[100];
-        sprintf(buf, "%s/%d.xf", argv[2], i);
-        tv.readXf(buf);
-
-        sprintf(buf, "%s/%d.jpg", argv[4], i);
-        QPixmap pixmap = tv.renderPixmap(tv.width(), tv.height());
-        pixmap.save(buf);
-    }
-    exit(0);
     return a.exec();
 }

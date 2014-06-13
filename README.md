@@ -14,7 +14,7 @@ In [my demo](http://opensse.com), I used 102 viewpoints on earth to project line
 
 ### model
 
-![teddy](http://img.blog.csdn.net/20140612164244140)
+![teddy](http://img.blog.csdn.net/20140613092351078)
 
 ### line drawings
 

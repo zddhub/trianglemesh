@@ -3,8 +3,8 @@ Line View Tool
 
 This project is to serve for [opensse](https://github.com/zddhub/opensse), Get line-drawing images for each model(support *.off and *.obj) using viewpoint matrix(under `../data/view/`).
 
-Demo
-====
+Demo 1
+======
 
 In [my demo](http://opensse.com), I used 102 viewpoints on earth to project line drawings.
 
@@ -29,6 +29,13 @@ example:(make sure dir teddy is exist.)
 ```shell
 ./gen_view_image ../data/teddy.off ./data/view/ 102 teddy
 ```
+
+Demo 2
+======
+
+On branch trianglemesh, there are powerfull line drawings extract framework for you. Until now, It supported Boundaries, Exterior Silhouette, Occluding Contours, Suggestive Contours, Ridges and Valleys, Apparent Ridges.
+
+![Triangle mesh](http://img.blog.csdn.net/20140613085209687)
 
 Thanks
 ======

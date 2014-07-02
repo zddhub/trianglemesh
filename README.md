@@ -1,4 +1,4 @@
-Line View Tool ![travis ci](https://travis-ci.org/zddhub/trianglemesh.svg?branch=master)
+Line View Tool [![Build Status](https://travis-ci.org/zddhub/trianglemesh.svg?branch=master)](https://travis-ci.org/zddhub/trianglemesh) 
 ==============
 
 This project is to serve for [opensse](https://github.com/zddhub/opensse), Get line-drawing images for each model(support *.off and *.obj) using viewpoint matrix(under `../data/view/`).
@@ -47,8 +47,8 @@ License
 
 Code is under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
 
-Donations
-=========
+Donate
+======
 
 I accept tips through [Alipay](http://img.blog.csdn.net/20140506233949640). Scan below qr code to donate:
 

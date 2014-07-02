@@ -76,6 +76,7 @@ step, smoothstep, faceforward, reflect, and refract
 #include <cmath>
 #include <iostream>
 #include <algorithm>
+#include <cstddef>
 
 
 // Let gcc optimize conditional branches a bit better...

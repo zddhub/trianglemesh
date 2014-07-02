@@ -3,9 +3,12 @@
 language: cpp
 
 install:
+  - sudo add-apt-repository --yes ppa:ubuntu-sdk-team/ppa
+  - sudo add-apt-repository --yes ppa:lttng/daily
   - sudo apt-get update -qq
-  - sudo apt-get install -qq qt5-default qttools5-dev-tools qt5-qmake
-
+  - sudo apt-get install -qq pkg-config
+  - sudo apt-get install -qq qt5-qmake qtbase5-dev qtdeclarative5-dev
 script:
-  - qmake ./trianglemesh.pro -r -spec macx-clang CONFIG+=x86_65 
+  - qmake -qt=qt5 trianglemesh.pro -r -v
+  - qmake -qt=qt5 trianglemesh.pro -r
   - make

@@ -1,0 +1,11 @@
+# https://travis-ci.org
+
+language: cpp
+
+install:
+  - sudo apt-get update -qq
+  - sudo apt-get install -qq qt5-default qttools5-dev-tools qt5-qmake
+
+script:
+  - qmake ./trianglemesh.pro -r -spec macx-clang CONFIG+=x86_65 
+  - make

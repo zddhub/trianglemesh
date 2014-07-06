@@ -1,7 +1,7 @@
 Line View Tool [![Build Status](https://travis-ci.org/zddhub/trianglemesh.svg?branch=master)](https://travis-ci.org/zddhub/trianglemesh) 
 ==============
 
-This project is to serve for [opensse](https://github.com/zddhub/opensse), Get line-drawing images for each model(support *.off and *.obj) using viewpoint matrix(under `../data/view/`).
+This project is to serve [opensse](https://github.com/zddhub/opensse), Get line-drawing images for each model(support *.off and *.obj) using viewpoint matrix(under `../data/view/`).
 
 Demo 1
 ======

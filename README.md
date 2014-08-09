@@ -23,7 +23,7 @@ In [my demo](http://opensse.com), I used 102 viewpoints on earth to project line
 Usage
 =====
 ```shell
-gen_view_image.exe modelfile xfdir viewnum imagedir
+gen_view_image modelfile xfdir viewnum imagedir
 ```
 example:(make sure dir teddy is exist.)
 ```shell

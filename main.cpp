@@ -49,7 +49,7 @@
  */
 
 void usage() {
-    cout << "Usage: gen_view_image.exe modelfile xfdir viewnum imagedir"<<endl;
+    cout << "Usage: gen_view_image modelfile xfdir viewnum imagedir"<<endl;
 }
 
 int main(int argc, char *argv[])

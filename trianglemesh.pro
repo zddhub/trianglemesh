@@ -25,6 +25,9 @@ DESTDIR = ./bin
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
+QMAKE_MACOSX_DEPLOYMENT_TARGET = 10.9
+QMAKE_MAC_SDK = macosx10.9
+
 SOURCES += main.cpp \
     trimeshview.cpp \
     trianglemesh/trianglemesh_io.cpp \

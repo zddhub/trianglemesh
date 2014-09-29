@@ -25,6 +25,8 @@ TEMPLATE = app
 DESTDIR = ./bin
 
 macx : CONFIG -= app_bundle
+macx : QMAKE_MACOSX_DEPLOYMENT_TARGET = 10.9
+macx : QMAKE_MAC_SDK = macosx10.9
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 

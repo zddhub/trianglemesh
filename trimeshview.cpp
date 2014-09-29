@@ -183,9 +183,11 @@ bool TriMeshView::readXf(const char *filename)
         xf = xform::trans(0, 0, -3.5f / 0.7 * triMesh->bsphere.r) *
                              xform::trans(-triMesh->bsphere.center);
     } else {
-
-        xf = xform::trans(0, 0, -3.5f / 0.7 * triMesh->bsphere.r) *
-                xform::trans(-triMesh->bsphere.center) * xf;
+        //
+//        xf = xform::trans(0, 0, -3.5f / 0.7 * triMesh->bsphere.r) *
+//                xform::trans(-triMesh->bsphere.center) * xf;
+                xf = xform::trans(0, 0, -3.5f / 0.7 * triMesh->bsphere.r) * xf *
+                        xform::trans(-triMesh->bsphere.center);
     }
     camera.stopspin();
     updateGL();

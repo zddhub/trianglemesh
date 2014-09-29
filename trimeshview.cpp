@@ -184,6 +184,8 @@ bool TriMeshView::readXf(const char *filename)
                              xform::trans(-triMesh->bsphere.center);
     } else {
 
+//        xf = xform::trans(0, 0, -3.5f / 0.7 * triMesh->bsphere.r) *
+//                xform::trans(-triMesh->bsphere.center) * xf;
         xf = xform::trans(0, 0, -3.5f / 0.7 * triMesh->bsphere.r) *
                 xform::trans(-triMesh->bsphere.center) * xf;
     }

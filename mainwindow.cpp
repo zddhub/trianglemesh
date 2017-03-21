@@ -60,7 +60,7 @@ void MainWindow::setThresh()
 void MainWindow::open()
 {
     QString fileName = QFileDialog::getOpenFileName(this,
-            tr("Open obj | off"), "", tr("Obj Files (*.obj) | Off Files (*.off)"));
+            tr("Open obj | off"), "", tr("Obj Files (*.obj) ;; Off Files (*.off)"));
 
     if(!fileName.endsWith(tr(".obj")) && !fileName.endsWith(tr(".OBJ")) &&
             !fileName.endsWith(tr(".off")) && !fileName.endsWith(tr(".OFF")))

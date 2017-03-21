@@ -19,7 +19,7 @@
 QT       += core gui \
             opengl
 
-TARGET = LineExtract
+TARGET = LineDrawings
 TEMPLATE = app
 DESTDIR = ./bin
 

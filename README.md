@@ -1,24 +1,24 @@
 Line View Tool [![Build Status](https://travis-ci.org/zddhub/trianglemesh.svg?branch=trianglemesh)](https://travis-ci.org/zddhub/trianglemesh)
 ==============
 
-This project is to serve for [opensse](https://github.com/zddhub/opensse), Get line-drawing images for each model(support *.off and *.obj) using viewpoint matrix(under `../data/view/`).
+This project serves [OpenSSE](https://github.com/zddhub/opensse), that gets line-drawing images for each model(support *.off and *.obj) using viewpoint matrix (under `../data/view/`).
 
 Demo 1
 ======
 
-In [my demo](http://opensse.com), I used 102 viewpoints on earth to project line drawings.
+In [my demo](http://opensse.com), I used 102 viewpoints on globe to project line drawings.
 
 ### view points(red points)
 
-![view points](http://img.blog.csdn.net/20140612163508796)
+![view points](data/viewpoints.png)
 
 ### model
 
-![teddy](http://img.blog.csdn.net/20140613092351078)
+![teddy](data/teddy.png)
 
 ### line drawings
 
-![line drawings](http://img.blog.csdn.net/20140612163841031)
+![line drawings](data/teddy_line_drawings.png)
 
 Usage
 =====
@@ -35,7 +35,7 @@ Demo 2
 
 On branch trianglemesh, there are powerfull line drawings extract framework for you. Until now, It supported Boundaries, Exterior Silhouette, Occluding Contours, Suggestive Contours, Ridges and Valleys, Apparent Ridges.
 
-![Triangle mesh](http://img.blog.csdn.net/20140613085209687)
+![Triangle mesh](data/linedrawings.png)
 
 Thanks
 ======

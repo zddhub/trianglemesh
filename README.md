@@ -1,41 +1,50 @@
 Line View Tool [![Build Status](https://travis-ci.org/zddhub/trianglemesh.svg?branch=master)](https://travis-ci.org/zddhub/trianglemesh) 
 ==============
 
-This project is to serve [opensse](https://github.com/zddhub/opensse), Get line-drawing images for each model(support *.off and *.obj) using viewpoint matrix(under `../data/view/`).
+This project serves [OpenSSE](https://github.com/zddhub/opensse), that gets line-drawing images for each model (support *.off and *.obj) using viewpoint matrix(under `../data/view/`).
 
-Demo 1
-======
+![line drawings](data/teddy_line_drawings.gif "Line drawings")
 
-In [my demo](http://opensse.com), I used 102 viewpoints on earth to project line drawings.
+
+Demo
+====
+
+In [my demo](http://opensse.com), I used 102 viewpoints on globe to project line drawings.
 
 ### view points(red points)
 
-![view points](http://img.blog.csdn.net/20140612163508796)
+![view points](data/viewpoints.png)
 
 ### model
 
-![teddy](http://img.blog.csdn.net/20140613092351078)
+![teddy](data/teddy.off)
 
-### line drawings
+### line drawings images
 
-![line drawings](http://img.blog.csdn.net/20140612163841031)
+![line drawings](data/teddy_line_drawings.png)
+
+
+Compile
+=======
+
+```shell
+mkdir release; cd release
+qmake ../trianglemesh.pro -o Makefile
+make
+```
+
+You will get your executable tools under bin folder
 
 Usage
 =====
 ```shell
 gen_view_image modelfile xfdir viewnum imagedir
 ```
-example:(make sure dir teddy is exist.)
+example:
 ```shell
-./gen_view_image ../data/teddy.off ./data/view/ 102 teddy
+mkdir teddy_images
+./gen_view_image ../../data/teddy.off ../../data/view/ 102 teddy_images
 ```
-
-Demo 2
-======
-
-On branch trianglemesh, there are powerfull line drawings extract framework for you. Until now, It supported Boundaries, Exterior Silhouette, Occluding Contours, Suggestive Contours, Ridges and Valleys, Apparent Ridges.
-
-![Triangle mesh](http://img.blog.csdn.net/20140613085209687)
 
 Thanks
 ======
@@ -52,7 +61,7 @@ Donate
 
 I accept tips through [Alipay](http://img.blog.csdn.net/20140506233949640). Scan below qr code to donate:
 
-![Alipay](http://img.blog.csdn.net/20140506233949640 "Donation").
+![Alipay](data/alipay.png "Donation").
 
 Contact me
 ==========

@@ -33,9 +33,9 @@ example:(make sure dir teddy is exist.)
 Demo 2
 ======
 
-On branch trianglemesh, there are powerfull line drawings extract framework for you. Until now, It supported Boundaries, Exterior Silhouette, Occluding Contours, Suggestive Contours, Ridges and Valleys, Apparent Ridges.
+On `trianglemesh` branch, there are powerfull line drawings extract framework for you. Until now, It supported Boundaries, Exterior Silhouette, Occluding Contours, Suggestive Contours, Ridges and Valleys, Apparent Ridges.
 
-![Triangle mesh](data/linedrawings.png)
+![Triangle Mesh Line Drawings](data/line-drawings.gif "Line Drawings")
 
 Thanks
 ======

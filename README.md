@@ -1,5 +1,5 @@
-Line View Tool [![Build Status](https://travis-ci.org/zddhub/trianglemesh.svg?branch=master)](https://travis-ci.org/zddhub/trianglemesh) 
-==============
+Line Drawings View Tool [![Build Status](https://travis-ci.org/zddhub/trianglemesh.svg?branch=master)](https://travis-ci.org/zddhub/trianglemesh) 
+=======================
 
 This project serves [OpenSSE](https://github.com/zddhub/opensse), that gets line-drawing images for each model (support *.off and *.obj) using viewpoint matrix(under `../data/view/`).
 
@@ -11,15 +11,15 @@ Demo
 
 In [my demo](http://opensse.com), I used 102 viewpoints on globe to project line drawings.
 
-### view points(red points)
+### View points(red points)
 
 ![view points](data/viewpoints.png)
 
-### model
+### Model
 
-![teddy](data/teddy.off)
+![teddy](data/teddy.png)
 
-### line drawings images
+### Line drawings images
 
 ![line drawings](data/teddy_line_drawings.png)
 
@@ -33,7 +33,7 @@ qmake ../trianglemesh.pro -o Makefile
 make
 ```
 
-You will get your executable tools under bin folder
+You will get your executable tool under bin folder.
 
 Usage
 =====

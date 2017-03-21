@@ -1,11 +1,15 @@
 # https://travis-ci.org
 
 language: cpp
-
-install:
-    - sudo add-apt-repository --yes ppa:ubuntu-sdk-team/ppa
-    - sudo apt-get update -qq
-    - sudo apt-get install -qq qt5-qmake qtbase5-dev qtdeclarative5-dev libqt5webkit5-dev libsqlite3-dev
+compiler:
+  - gcc
+  - clang
+env:
+  - QT=qt5 CONFIG=shared
+before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get install -qq qt5-qmake qtbase5-dev
+script:
 script:
   - qmake -qt=qt5 trianglemesh.pro -r -v
   - qmake -qt=qt5 trianglemesh.pro -r

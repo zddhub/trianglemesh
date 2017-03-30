@@ -33,7 +33,7 @@ qmake ../trianglemesh.pro -o Makefile
 make
 ```
 
-You will get your executable tool under bin folder.
+You will get your executable tool under `bin` folder.
 
 Usage
 =====
@@ -44,6 +44,15 @@ example:
 ```shell
 mkdir teddy_images
 ./gen_view_image ../../data/teddy.off ../../data/view/ 102 teddy_images
+```
+
+Support for OpenSSE
+===================
+
+There is a tool `./linedrawing_project.sh` to prepare images for [OpenSSE](https://github.com/zddhub/opensse/wiki/How-to-train-data#get-line-drawing-views), Use it to get 102 view images for each modal. when you compile code, and return root path to run:
+
+```sh
+./linedrawing_project.sh -d ~/Database/SHREC12 -p *.off
 ```
 
 Thanks

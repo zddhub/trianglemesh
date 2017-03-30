@@ -49,7 +49,7 @@ mkdir teddy_images
 Support for OpenSSE
 ===================
 
-There is a tool `./linedrawing_project.sh` to prepare images for [OpenSSE](https://github.com/zddhub/opensse/wiki/How-to-train-data#get-line-drawing-views), Use it to get 102 view images for each modal. when you compile code, and return root path to run:
+There is a tool `./linedrawing_project.sh` to prepare view images for [OpenSSE](https://github.com/zddhub/opensse/wiki/How-to-train-data#get-line-drawing-views), Use it to get 102 view images for each modal. After you compile code, and return root path to run:
 
 ```sh
 ./linedrawing_project.sh -d ~/Database/SHREC12 -p *.off

@@ -9,7 +9,7 @@ usage() {
     echo "  This command generates 102 line-drawing images from 102 views of each model under `underline rootdir` folder"
     echo "  The options are as follows:"
     echo "  -d\t root directory"
-    echo "  -p\t the pathname being examined matches `underline pattern`, eg: \"*.off\", \"*.obj\" "
+    echo "  -p\t the pathname being examined matches `underline pattern`, support \"*.off\" or \"*.obj\" "
     exit 1
 }
 

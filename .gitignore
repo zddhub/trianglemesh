@@ -19,3 +19,5 @@ qrc_*.cpp
 Makefile
 release
 *-build-*
+
+.DS_Store

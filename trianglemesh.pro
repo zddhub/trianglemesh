@@ -51,15 +51,6 @@ SOURCES += main.cpp \
 
 HEADERS  += \
     trimeshview.h \
-    trianglemesh/trianglemesh.h \
-    trianglemesh/XForm.h \
-    trianglemesh/Vec.h \
-    trianglemesh/strutil.h \
-    XForm.h \
-    Vec.h \
-    trianglemesh.h \
-    strutil.h \
-    GLCamera.h \
     include/lineqn.h \
     include/timestamp.h \
     include/bsphere.h \

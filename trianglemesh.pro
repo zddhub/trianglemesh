@@ -28,6 +28,9 @@ macx : CONFIG -= app_bundle
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
+INCLUDEPATH += $$PWD \
+    $$PWD/include
+
 SOURCES += main.cpp \
     trimeshview.cpp \
     trianglemesh/trianglemesh_io.cpp \
@@ -51,15 +54,6 @@ SOURCES += main.cpp \
 
 HEADERS  += \
     trimeshview.h \
-    trianglemesh/trianglemesh.h \
-    trianglemesh/XForm.h \
-    trianglemesh/Vec.h \
-    trianglemesh/strutil.h \
-    XForm.h \
-    Vec.h \
-    trianglemesh.h \
-    strutil.h \
-    GLCamera.h \
     include/lineqn.h \
     include/timestamp.h \
     include/bsphere.h \
@@ -70,8 +64,6 @@ HEADERS  += \
     featurelines.h \
     threshdialog.h \
     include/meshalgo.h
-
-INCLUDEPATH += ./include
 
 FORMS += \
     mainwindow.ui \

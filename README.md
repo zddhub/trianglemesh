@@ -55,6 +55,21 @@ There is a tool `./linedrawing_project.sh` to prepare view images for [OpenSSE](
 ./linedrawing_project.sh -d ~/Database/SHREC12 -p *.off
 ```
 
+Troubleshooting
+===============
+
+* Compile error on macOS like below:
+
+```sh
+.../clang_64/lib/QtCore.framework/Headers/qsystemdetection.h:197:12: fatal error: 'TargetConditionals.h' file not found
+```
+
+How to fix:
+
+```
+macx : QMAKE_MAC_SDK=macosx10.13 # Change this to your macOS version if you are using macOS
+```
+
 Thanks
 ======
 - [Szymon Rusinkiewicz](http://www.cs.princeton.edu/~smr/)

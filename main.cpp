@@ -59,8 +59,8 @@ int main(int argc, char *argv[])
         usage();
         exit(1);
     }
-//    MainWindow mw;
-//    mw.show();
+    MainWindow mw;
+    mw.show();
     TriMeshView tv;
     tv.isDrawBoundaries = true;
     tv.isDrawOccludingContours = true;
